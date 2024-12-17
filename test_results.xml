@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+    <testsuite name="pytest" errors="0" failures="0" skipped="0" tests="16" time="1.084"
+               timestamp="2024-12-17T17:26:26.236637+03:00" hostname="M15-I5W301">
+        <testcase classname="test.test_author_router" name="test_post_create_author" time="0.023"/>
+        <testcase classname="test.test_author_router" name="test_post_create_author2" time="0.006"/>
+        <testcase classname="test.test_author_router" name="test_get_read_authors" time="0.006"/>
+        <testcase classname="test.test_author_router" name="test_get_read_author" time="0.010"/>
+        <testcase classname="test.test_author_router" name="test_put_update_author" time="0.010"/>
+        <testcase classname="test.test_author_router" name="test_delete_delete_author" time="0.008"/>
+        <testcase classname="test.test_book_router" name="test_post_create_book" time="0.011"/>
+        <testcase classname="test.test_book_router" name="test_post_create_book_2" time="0.006"/>
+        <testcase classname="test.test_book_router" name="test_get_read_books" time="0.006"/>
+        <testcase classname="test.test_book_router" name="test_get_read_book" time="0.006"/>
+        <testcase classname="test.test_book_router" name="test_put_update_book" time="0.010"/>
+        <testcase classname="test.test_book_router" name="test_delete_delete_book" time="0.006"/>
+        <testcase classname="test.test_borrow_router" name="test_post_create_borrow" time="0.010"/>
+        <testcase classname="test.test_borrow_router" name="test_get_read_borrows" time="0.005"/>
+        <testcase classname="test.test_borrow_router" name="test_get_read_borrow" time="0.006"/>
+        <testcase classname="test.test_borrow_router" name="test_patch_update_borrows" time="0.008"/>
+    </testsuite>
+</testsuites>

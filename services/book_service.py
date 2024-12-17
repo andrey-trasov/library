@@ -6,7 +6,7 @@ from schemas.book_schema import BookUpdate, BookCreate
 
 # Добавление книги
 async def create_book(db: Session, book: BookCreate):
-    db_book = Book(**book.dict())
+    db_book = Book(**book.model_dump())
     db.add(db_book)
     db.commit()
     db.refresh(db_book)

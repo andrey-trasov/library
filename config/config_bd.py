@@ -1,14 +1,15 @@
 # Настройка базы данных
 from sqlalchemy import create_engine, MetaData
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, declarative_base
 from databases import Database
 
+from dotenv import load_dotenv
+import os
 
-# DATABASE_URL = "postgresql+asyncpg://postgres:12345@localhost/library"
-DATABASE_URL = "postgresql://postgres:12345@localhost/library"
 
+load_dotenv()
 
+DATABASE_URL = f"postgresql://{os.getenv('POSTGRES_USER')}:{os.getenv('POSTGRES_PASSWORD')}@{os.getenv('POSTGRES_HOST')}/{os.getenv('POSTGRES_DB')}"
 
 # Движок для синхронного использования
 engine = create_engine(DATABASE_URL)

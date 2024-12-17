@@ -13,7 +13,7 @@ async def create_borrow(db: Session, borrow: BorrowCreate):
         book.number_books -= 1 # забираем книгу из библиотеки
 
         # создание записи о выдаче
-        db_borrow = Borrow(**borrow.dict())
+        db_borrow = Borrow(**borrow.model_dump())
         db.add(db_borrow)
         db.commit()
         db.refresh(db_borrow)

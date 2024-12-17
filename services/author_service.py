@@ -7,7 +7,7 @@ from schemas.author_schema import AuthorCreate, AuthorUpdate
 
 # Создание автора
 async def create_author(db: Session, author: AuthorCreate):
-    db_author = Author(**author.dict())
+    db_author = Author(**author.model_dump())
     db.add(db_author)
     db.commit()
     db.refresh(db_author)
