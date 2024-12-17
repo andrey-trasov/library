@@ -19,5 +19,5 @@ class BorrowOut(BorrowBase):
     id: int
     return_date: date | None
 
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attributes = True

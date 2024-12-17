@@ -1,12 +1,11 @@
 # Настройка базы данных
 from sqlalchemy import create_engine, MetaData
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, declarative_base
 from databases import Database
 
 
 # DATABASE_URL = "postgresql+asyncpg://postgres:12345@localhost/library"
-DATABASE_URL = "postgresql://postgres:12345@localhost/library"
+DATABASE_URL = "postgresql://postgres:12345@localhost/library_2"
 
 
 

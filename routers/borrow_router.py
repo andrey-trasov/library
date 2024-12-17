@@ -41,6 +41,6 @@ async def get_read_borrow(id: int, db: Session = Depends(get_db)):
 
 # Завершение выдачи
 @router.patch("/borrows/{id}/return", response_model=BorrowOut)
-async def put_update_borrows(id: int, reader: BorrowUpdate, db: Session = Depends(get_db)):
+async def patch_update_borrows(id: int, reader: BorrowUpdate, db: Session = Depends(get_db)):
     """Завершение выдачи"""
     return await update_borrows(db, id, reader)

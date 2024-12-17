@@ -17,5 +17,5 @@ class AuthorUpdate(AuthorBase):
 class AuthorOut(AuthorBase):
     id: int
 
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attributes = True
