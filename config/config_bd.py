@@ -4,9 +4,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 from databases import Database
 
 
-# DATABASE_URL = "postgresql+asyncpg://postgres:12345@localhost/library"
-DATABASE_URL = "postgresql://postgres:12345@localhost/library_2"
-
+DATABASE_URL = "postgresql://postgres:12345@localhost/library"
 
 
 # Движок для синхронного использования
